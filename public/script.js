@@ -11,4 +11,15 @@ function randomRGB() {
       letter.style.color = randomRGB();
     }
   }, 1000)
+
+  document.addEventListener('DOMContentLoaded', function(){
+    const chicken = document.getElementById('chicken');
+
+    chicken.addEventListener('click', function(){
+      popup.classList.add('show');
+      setTimeout(function(){
+        popup.classList.remove('show');
+      }, 3000)
+    })
+  })
   
