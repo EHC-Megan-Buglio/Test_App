@@ -23,15 +23,33 @@ http.createServer(function(request, response) {
 
         #rotatingText {
           font-size: 36px;
-          background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red, violet);
+          animation: rainbowText 7s linear infinite;
+          background-image: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red, violet);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent;
-          animation: rainbowText 8s linear infinite;
         }
 
         @keyframes rainbowText {
           0% {
+            background-position: 0% 50%;
+          }
+          14.3% {
+            background-position: 100% 50%;
+          }
+          28.6% {
+            background-position: 0% 50%;
+          }
+          42.9% {
+            background-position: 100% 50%;
+          }
+          57.2% {
+            background-position: 0% 50%;
+          }
+          71.5% {
+            background-position: 100% 50%;
+          }
+          85.8% {
             background-position: 0% 50%;
           }
           100% {
