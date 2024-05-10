@@ -1,5 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: olive;
+}
+
 #rotatingText {
-    font-size: 36px;
-    color: red; /* Initial color */
-  }
-  
+  font-family: 'Lilita One', cursive;
+  font-size: 13rem;
+  transition: color 100ms;
+}
