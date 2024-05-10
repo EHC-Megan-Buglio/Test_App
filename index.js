@@ -10,21 +10,19 @@ http.createServer(function(request, response) {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Egg Harbor Cafe</title>
-    </head>
-    <body>
-      <div id="rotatingText"></div>
-      <script>
-        const rotatingText = document.getElementById('rotatingText');
-        const texts = ['Egg Harbor Cafe', 'Egg Harbor Café', 'Egg Harbor Cafe!'];
-        let index = 0;
-
-        function rotateText() {
-          rotatingText.textContent = texts[index];
-          index = (index + 1) % texts.length;
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
         }
 
-        setInterval(rotateText, 2000); // Change text every 2 seconds
-      </script>
+        #rotatingText {
+          animation: spin 4s linear infinite;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="rotatingText">Egg Harbor Cafe</div>
     </body>
     </html>
   `);
