@@ -3,11 +3,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: olive;
+  background-color: black;
 }
 
 #rotatingText {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Brandon Grotesque';
   font-size: 13rem;
   transition: color 100ms;
 }
