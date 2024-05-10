@@ -6,7 +6,7 @@ body {
   background-color: black;
 }
 
-#rotatingText {
+.letter {
   font-family: 'Brandon Grotesque';
   font-size: 13rem;
   transition: color 100ms;
