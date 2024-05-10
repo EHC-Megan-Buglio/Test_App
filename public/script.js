@@ -5,8 +5,10 @@ function randomRGB() {
     return `rgb(${r},${g},${b})`;
   }
   
-  setInterval(function() {
-    const rotatingText = document.getElementById('rotatingText');
-    rotatingText.style.color = randomRGB();
-  }, 1000);
+  const letters = document.querySelectorAll(".letter");
+  const intervalId = setInterval(function(){
+    for(let letter of letters){
+      letter.style.color = randomRGB();
+    }
+  }, 1000)
   
